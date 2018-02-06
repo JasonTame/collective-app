@@ -1,0 +1,73 @@
+<template>
+  <section class="hero collective-bg is-fullheight">
+    <div class="hero-body">
+      <div class="container">
+        <h1 class="title">
+          Welcome to Collective
+        </h1>
+        <br>
+        <h2 class="subtitle">
+          <!---->
+          {{quotes[randomQuote()]}}
+        </h2>
+        <br>
+        <div class="field is-grouped">
+          <p class="control">
+            <router-link :to="{ name: 'registerLink' }" tag = "div"><a class="button is-link is-medium">
+              Register as NGO
+            </a></router-link>
+          </p>
+          <p class="control">
+            <router-link :to="{ name: 'registerLink' }" tag = "div"><a class="button is-link is-medium">
+              Register as Volunteer
+            </a></router-link>
+          </p>
+        </div>
+        <div class = "login">
+          <router-link :to="{ name: 'loginLink' }" tag = "div"><a class="button is-success is-large">
+            Login
+          </a></router-link>
+        </div>
+      </div>
+    </div>
+  </section>
+</template>
+
+<script>
+  export default {
+    data() {
+      return {
+        quotes: ['“It is not enough to be industrious; so are the ants. What are you industrious about?', 'You can do anything, but not everything.', 'Do not seek to follow in the footsteps of the men of old; seek what they sought.']
+      }
+    },
+    methods: {
+      randomQuote() {
+        return Math.floor(Math.random() * Math.floor(3))
+      }
+    }
+  }
+</script>
+
+<style>
+
+.field.is-grouped {
+  justify-content: center;
+}
+
+.login {
+  justify-content: center;
+}
+
+.collective-bg {
+  background-color: #273065;
+  color: #fff;
+}
+
+.collective-bg .title {
+  color: #fff;
+}
+
+.collective-bg .subtitle {
+  color: #fff;
+}
+</style>
