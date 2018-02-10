@@ -7,8 +7,10 @@
         </h1>
         <br>
         <h2 class="subtitle">
-          <!---->
-          {{quotes[randomQuote()]}}
+          <blockquote>
+            <p>{{quotes[quoteNum].quoteText}}</p>
+            <p><em>-{{quotes[quoteNum].quoteAuthor}}</em></p>
+          </blockquote>
         </h2>
         <br>
         <div class="field is-grouped">
@@ -37,12 +39,29 @@
   export default {
     data() {
       return {
-        quotes: ['“It is not enough to be industrious; so are the ants. What are you industrious about?', 'You can do anything, but not everything.', 'Do not seek to follow in the footsteps of the men of old; seek what they sought.']
+        quotes: [
+          {
+            quoteText: '“It is not enough to be industrious; so are the ants. What are you industrious about?',
+            quoteAuthor: "Henry David Thoreau"
+          },
+          {
+            quoteText: 'You can do anything, but not everything.',
+            quoteAuthor: "David Allen"
+          },
+          {
+            quoteText: 'Do not seek to follow in the footsteps of the men of old; seek what they sought.',
+            quoteAuthor: "Matsuo Basho"
+          }],
+        quoteNum: 0
       }
+    },
+    mounted() {
+      this.randomQuote();
     },
     methods: {
       randomQuote() {
-        return Math.floor(Math.random() * Math.floor(3))
+        this.quoteNum = Math.floor(Math.random() * Math.floor(3));
+        return this.quoteNum;
       }
     }
   }
