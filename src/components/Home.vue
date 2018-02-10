@@ -9,50 +9,34 @@
           </h1>
           <br>
           <h2 class="subtitle">
-            “It is not enough to be industrious; so are the ants. What are you industrious about?” - <em>Henry David Thoreau</em>
+            <blockquote>
+              <p>{{quotes[quoteNum].quoteText}}</p>
+              <p><em>-{{quotes[quoteNum].quoteAuthor}}</em></p>
+            </blockquote>
           </h2>
           <br>
         </div>
       </div>
     </div>
-    <div class="columns features">
-      <div class="column is-4">
-        <div class="card">
-          <div class="card-image has-text-centered">
-            <i class="fa fa-paw"></i>
-          </div>
-          <div class="card-content">
-            <div class="content">
-              <h4>Tristique senectus et netus et. </h4>
-              <p>Purus semper eget duis at tellus at urna condimentum mattis. Non blandit massa enim nec. Integer enim neque volutpat ac tincidunt vitae semper quis. Accumsan tortor posuere ac ut consequat semper viverra nam.</p>
-              <p><a href="#">Learn more</a></p>
-            </div>
-          </div>
-        </div>
+    <div class = "columns">
+      <div class = "column">
+        <h2 class = "is-size-2">Collective</h2>
+        <p><b>y<u>o</u>ur change</b></p>
+        <p>Collective matches your skill-set to purpose based  projects allowing
+           you to show and grow your skill-set  through  meaningful work.
+           All this whilst building your purpose CV. </p>
       </div>
-      <div class="column is-4">
-        <div class="card">
-          <div class="card-image has-text-centered">
-            <i class="fa fa-id-card"></i>
+    </div>
+    <div class = "columns features">
+      <div class = "column is-4"  v-for = "step in steps">
+        <div class = "card">
+          <div class = "has-text-centered">
+            <h3 class = "is-size-3">{{step.num}}</h3>
           </div>
-          <div class="card-content">
-            <div class="content">
-              <h4>Tempor orci dapibus ultrices in.</h4>
-              <p>Ut venenatis tellus in metus vulputate. Amet consectetur adipiscing elit pellentesque. Sed arcu non odio euismod lacinia at quis risus. Faucibus turpis in eu mi bibendum neque egestas cmonsu songue. Phasellus vestibulum lorem sed risus.</p>
-              <p><a href="#">Learn more</a></p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="column is-4">
-        <div class="card">
-          <div class="card-image has-text-centered">
-            <i class="fa fa-rocket"></i>
-          </div>
-          <div class="card-content">
-            <div class="content">
-              <h4> Leo integer malesuada nunc vel risus.  </h4>
-              <p>Imperdiet dui accumsan sit amet nulla facilisi morbi. Fusce ut placerat orci nulla pellentesque dignissim enim. Libero id faucibus nisl tincidunt eget nullam. Commodo viverra maecenas accumsan lacus vel facilisis.</p>
+          <div class = "card-content">
+            <div class = "content">
+              <h4 class = "is-size-4">{{step.title}}</h4></div>
+              <p>{{step.text}}</p>
               <p><a href="#">Learn more</a></p>
             </div>
           </div>
@@ -80,11 +64,51 @@
     },
     data() {
       return {
+        quotes: [
+          {
+            quoteText: '“It is not enough to be industrious; so are the ants. What are you industrious about?',
+            quoteAuthor: "Henry David Thoreau"
+          },
+          {
+            quoteText: 'You can do anything, but not everything.',
+            quoteAuthor: "David Allen"
+          },
+          {
+            quoteText: 'Do not seek to follow in the footsteps of the men of old; seek what they sought.',
+            quoteAuthor: "Matsuo Basho"
+          }],
+        quoteNum: 0,
         projects: [
           {Name: "", image: "", description: "", skills: ['skill1', 'skill2', 'skill3', 'skill4'], category: 'category'},
           {Name: "", image: "", description: "", skills: ['skill1', 'skill2', 'skill3', 'skill4'], category: 'category'},
           {Name: "", image: "", description: "", skills: ['skill1', 'skill2', 'skill3', 'skill4'], category: 'category'}
+        ],
+        steps: [
+          {
+            num: 1,
+            title: "Skill-Set/Areas of Expertise",
+            text: "Filter dropdown menu to select your  areas of expertise."
+          },
+          {
+            num: 2,
+            title: "Your Passion Points",
+            text: "Then filter projects by  your passion points"
+          },
+          {
+            num: 3,
+            title: "Meaningful Volunteer Work",
+            text: "Reach out to enquire  more and Begin!"
+          }
         ]
+      }
+    },
+    mounted() {
+      this.randomQuote();
+    },
+    methods: {
+      randomQuote() {
+        this.quoteNum = Math.floor(Math.random() * Math.floor(3));
+        return this.quoteNum;
       }
     }
   }
