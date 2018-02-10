@@ -1,7 +1,7 @@
 /* eslint-disable */
 import Home from './components/Home.vue'
 import Landing from './components/Landing.vue'
-import RegisterNGO from './components/RegisterNGO.vue'
+import RegisterNGO from './components/NGO/RegisterNGO.vue'
 import RegisterVolunteer from './components/RegisterVolunteer.vue'
 import Login from './components/Login.vue'
 import Admin from './components/Admin.vue'

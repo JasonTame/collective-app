@@ -12,7 +12,7 @@ import Header from './components/Header.vue'
 import Footer from './components/Footer.vue'
 import Landing from './components/Landing.vue'
 import Login from './components/Login.vue'
-import RegisterNGO from './components/RegisterNGO.vue'
+import RegisterNGO from './components/NGO/RegisterNGO.vue'
 import RegisterVolunteer from './components/RegisterVolunteer.vue'
 import Home from './components/Home.vue'
 

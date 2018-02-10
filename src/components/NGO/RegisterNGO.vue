@@ -9,13 +9,13 @@
           <div class = "field">
             <form-wizard color="#dc9602" error-color="#a94442" title = " " subtitle = " ">
               <tab-content title="NGO details" icon="fa fa-user">
-                <tcVolPersonal></tcVolPersonal>
+                <tcNgoPersonal></tcNgoPersonal>
               </tab-content>
               <tab-content title="Categories" icon="fa fa-heart">
-                <tcVolPassions></tcVolPassions>
+                <tcNgoCategories></tcNgoCategories>
               </tab-content>
               <tab-content title="Skills Required" icon="fa fa-lightbulb-o">
-                <tcVolSkills></tcVolSkills>
+                <tcNgoSkills></tcNgoSkills>
               </tab-content>
             </form-wizard>
           </div>
@@ -36,17 +36,17 @@ import {FormWizard, TabContent} from 'vue-form-wizard'
 import 'vue-form-wizard/dist/vue-form-wizard.min.css'
 
 // Form component import
-import VolunteerPersonalForm from './RegisterPersonal.vue'
-import VolunteerSkillsForm from './RegisterSkills.vue'
-import VolunteerPassionsForm from './RegisterPassions.vue'
+import NgoPersonalForm from './RegisterNgoPersonal.vue'
+import NgoSkillsForm from './RegisterNgoSkills.vue'
+import NgoCategoriesForm from './RegisterNgoCategories.vue'
 
 export default {
   components: {
     FormWizard,
     TabContent,
-    tcVolPersonal: VolunteerPersonalForm,
-    tcVolSkills: VolunteerSkillsForm,
-    tcVolPassions: VolunteerPassionsForm
+    tcNgoPersonal: NgoPersonalForm,
+    tcNgoSkills: NgoSkillsForm,
+    tcNgoCategories: NgoCategoriesForm
   },
   data () {
     return {
