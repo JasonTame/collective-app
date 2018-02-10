@@ -14,7 +14,7 @@
               <tab-content title="Passions" icon="fa fa-heart">
                 <tcVolPassions></tcVolPassions>
               </tab-content>
-              <tab-content title="Skill Set" icon="fa fa-lightbulb-o">
+              <tab-content title="Skill Set" icon="fa fa-lightbulb">
                 <tcVolSkills></tcVolSkills>
               </tab-content>
             </form-wizard>
@@ -57,21 +57,7 @@ export default {
 
 <style>
 
-.field span, li {
-  color: #363636;
-}
 
-.field i {
-  color: #dc9602
-}
-.collective-bg {
-  background-color: #273065;
-  color: #fff;
-}
-
-.collective-bg a {
-  color: #fff
-}
 
 
 </style>

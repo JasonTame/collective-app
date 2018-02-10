@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 import App from './App'
 import {routes} from './routes.js'
 import 'bulma/css/bulma.css'
+import 'font-awesome/css/font-awesome.css'
 
 Vue.use(VueRouter)
 

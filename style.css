@@ -1,1 +1,7 @@
 /*Styles applicable across multiple components*/
+
+
+svg {
+  color: #dc9602;
+  margin: 20px;
+}
