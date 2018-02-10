@@ -15,12 +15,12 @@
         <br>
         <div class="field is-grouped">
           <p class="control">
-            <router-link :to="{ name: 'registerLink' }" tag = "div"><a class="button is-link is-medium">
+            <router-link :to="{ name: 'registerNGOLink' }" tag = "div"><a class="button is-link is-medium">
               Register as NGO
             </a></router-link>
           </p>
           <p class="control">
-            <router-link :to="{ name: 'registerLink' }" tag = "div"><a class="button is-link is-medium">
+            <router-link :to="{ name: 'registerVolunteerLink' }" tag = "div"><a class="button is-link is-medium">
               Register as Volunteer
             </a></router-link>
           </p>

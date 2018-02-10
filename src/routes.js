@@ -1,7 +1,8 @@
 /* eslint-disable */
 import Home from './components/Home.vue'
 import Landing from './components/Landing.vue'
-import Register from './components/Register.vue'
+import RegisterNGO from './components/RegisterNGO.vue'
+import RegisterVolunteer from './components/RegisterVolunteer.vue'
 import Login from './components/Login.vue'
 import Admin from './components/Admin.vue'
 import ProfileVolunteer from './components/ProfileVolunteer.vue'
@@ -18,9 +19,14 @@ export const routes = [
     component: Landing
   },
   {
-    path: '/register',
-    name: 'registerLink',
-    component: Register
+    path: '/registerNGO',
+    name: 'registerNGOLink',
+    component: RegisterNGO
+  },
+  {
+    path: '/registerVol',
+    name: 'registerVolunteerLink',
+    component: RegisterVolunteer
   },
   {
     path: '/login',

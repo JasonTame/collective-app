@@ -12,7 +12,8 @@ import Header from './components/Header.vue'
 import Footer from './components/Footer.vue'
 import Landing from './components/Landing.vue'
 import Login from './components/Login.vue'
-import Register from './components/Register.vue'
+import RegisterNGO from './components/RegisterNGO.vue'
+import RegisterVolunteer from './components/RegisterVolunteer.vue'
 import Home from './components/Home.vue'
 
 export default {
@@ -22,7 +23,8 @@ export default {
     tcFooter: Footer,
     tcLanding: Landing,
     tcLogin: Login,
-    tcRegister: Register,
+    tcRegisterNGO: RegisterNGO,
+    tcRegisterVol: RegisterVolunteer,
     tcHome: Home
   }
 }
