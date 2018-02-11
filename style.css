@@ -1,7 +1,23 @@
 /*Styles applicable across multiple components*/
 
 
-svg {
-  color: #dc9602;
-  margin: 20px;
+#app {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+}
+
+.collective-bg {
+  background-color: #273065;
+  color: #fff;
+}
+
+.collective-bg .title {
+  color: #fff;
+}
+
+.collective-bg .subtitle {
+  color: #fff;
 }

@@ -1,5 +1,5 @@
-/* eslint-disable */
 import Home from './components/Home.vue'
+import About from './components/About.vue'
 import Landing from './components/Landing.vue'
 import RegisterNGO from './components/NGO/RegisterNGO.vue'
 import RegisterVolunteer from './components/RegisterVolunteer.vue'
@@ -12,6 +12,11 @@ export const routes = [
     path: '/home',
     name: 'homeLink',
     component: Home
+  },
+  {
+    path: '/about',
+    name: 'aboutLink',
+    component: About
   },
   {
     path: '/',
