@@ -17,6 +17,7 @@ export const routes = [
     path: '/about',
     name: 'aboutLink',
     component: About
+
   },
   {
     path: '/',

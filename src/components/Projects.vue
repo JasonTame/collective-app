@@ -40,172 +40,32 @@
     </div>
   </div>
   <div class="columns">
-    <!--Example project 1-->
-    <div class="column is-4">
-      <div class="card">
+    <div class = "column is-4" v-for = "project in projects">
+      <div class ="card">
         <div class="card-image">
           <figure class="image is-4by3">
             <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
           </figure>
         </div>
-        <div class="card-content">
-          <div class="media">
-
-            <div class="media-content">
-              <p class="title is-4 has-text-centered">Project Name</p>
+        <div class = "card-content">
+          <div class = "media">
+            <div class = "media-content">
+              <p class = "title is-4 has-text-centered">{{project.title}}</p>
             </div>
           </div>
-
-          <div class="content">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.
-            <strong>Skills:</strong><a>IT</a>,
-            <a href="#">Administration</a>
+          <br>
+          <div class = "content">
+            {{project.description}}
             <br>
-            <strong>Passions:</strong> <a>Elderly</a>
-
-            <hr> Posted on <time datetime="2018-1-1">12:00 PM - 5 Jan 2018</time>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!--Example project 2-->
-    <div class="column is-4">
-      <div class="card">
-        <div class="card-image">
-          <figure class="image is-4by3">
-            <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
-          </figure>
-        </div>
-        <div class="card-content">
-          <div class="media">
-
-            <div class="media-content">
-              <p class="title is-4 has-text-centered">Project Name</p>
-            </div>
-          </div>
-
-          <div class="content">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.
-            <strong>Skills:</strong><a>IT</a>,
-            <a href="#">Administration</a>
+            Skills: <a href = "#" v-for = "Skill in project.skills"> {{Skill}} </a>
             <br>
-            <strong>Passions:</strong> <a>Elderly</a>
-
-            <hr> Posted on <time datetime="2018-1-1">12:00 PM - 5 Jan 2018</time>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!--Example project 3-->
-    <div class="column is-4">
-      <div class="card">
-        <div class="card-image">
-          <figure class="image is-4by3">
-            <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
-          </figure>
-        </div>
-        <div class="card-content">
-          <div class="media">
-
-            <div class="media-content">
-              <p class="title is-4 has-text-centered">Project Name</p>
-            </div>
-          </div>
-
-          <div class="content">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.
-            <strong>Skills:</strong><a>IT</a>,
-            <a href="#">Administration</a>
-            <br>
-            <strong>Passions:</strong> <a>Elderly</a>
-
-            <hr> Posted on <time datetime="2018-1-1">12:00 PM - 5 Jan 2018</time>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="columns">
-    <!--Example project 4-->
-    <div class="column is-4">
-      <div class="card">
-        <div class="card-image">
-          <figure class="image is-4by3">
-            <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
-          </figure>
-        </div>
-        <div class="card-content">
-          <div class="media">
-
-            <div class="media-content">
-              <p class="title is-4 has-text-centered">Project Name</p>
-            </div>
-          </div>
-
-          <div class="content">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.
-            <strong>Skills:</strong><a>IT</a>,
-            <a href="#">Administration</a>
-            <br>
-            <strong>Passions:</strong> <a>Elderly</a>
-
-            <hr> Posted on <time datetime="2018-1-1">12:00 PM - 5 Jan 2018</time>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!--Example project 5-->
-    <div class="column is-4">
-      <div class="card">
-        <div class="card-image">
-          <figure class="image is-4by3">
-            <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
-          </figure>
-        </div>
-        <div class="card-content">
-          <div class="media">
-
-            <div class="media-content">
-              <p class="title is-4 has-text-centered">Project Name</p>
-            </div>
-          </div>
-
-          <div class="content">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.
-            <strong>Skills:</strong><a>IT</a>,
-            <a href="#">Administration</a>
-            <br>
-            <strong>Passions:</strong> <a>Elderly</a>
-
-            <hr> Posted on <time datetime="2018-1-1">12:00 PM - 5 Jan 2018</time>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!--Example project 6-->
-    <div class="column is-4">
-      <div class="card">
-        <div class="card-image">
-          <figure class="image is-4by3">
-            <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
-          </figure>
-        </div>
-        <div class="card-content">
-          <div class="media">
-
-            <div class="media-content">
-              <p class="title is-4 has-text-centered">Project Name</p>
-            </div>
-          </div>
-
-          <div class="content">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.
-            <strong>Skills:</strong><a>IT</a>,
-            <a href="#">Administration</a>
-            <br>
-            <strong>Passions:</strong> <a>Elderly</a>
-
-            <hr> Posted on <time datetime="2018-1-1">12:00 PM - 5 Jan 2018</time>
+            Categories: <a href = "#" v-for = "Category in project.categories"> {{Category}} </a>
+            <hr>
+            <p class="control has-text-centered">
+              <a class="button is-primary is-fullwidth">
+                  Volunteer
+              </a>
+            </p>
           </div>
         </div>
       </div>
@@ -213,3 +73,50 @@
   </div>
 </div>
 </template>
+
+<script>
+  export default {
+    data() {
+      return {
+        projects: {
+          demo1: {
+            title: "Genetic Alliance South Africa",
+            description: "Help Genetic Alliance South Africa with 5 volunteers for 4-8 hours for Layout/design of bi-monthly e-newsletter in Mail Chimp",
+            skills: {
+              1: "IT",
+              2: "Web Design",
+            },
+            categories: {
+              1: "Health",
+              2: ""
+            }
+          },
+          demo2: {
+            title: "DOCKDA Rural Development Agency",
+            description: "Help DOCKDA Rural Development Agency with 1 volunteer for 4-8 hours for Servicing of organisation vehicle",
+            skills: {
+              1: "Mechanical",
+              2: "",
+            },
+            categories: {
+              1: "Rural",
+              2: "Development"
+            }
+          },
+          demo3: {
+            title: "The Rays of Hope Children's Centre NGO",
+            description: "Help Rays of Hope with 5 volunteers for 1-4 hours for data consolidation using Microsoft Excell and Access",
+            skills: {
+              1: "Excel",
+              2: "IT"
+            },
+            categories: {
+              1: "Children",
+              2: ""
+            }
+          }
+        }
+      }
+    }
+  }
+</script>
