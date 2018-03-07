@@ -63,7 +63,7 @@
             <hr>
             <p class="control has-text-centered">
               <a class="button is-primary is-fullwidth">
-                  Volunteer
+                  Voluntee
               </a>
             </p>
           </div>
