@@ -26,7 +26,7 @@
             </div>
           </div>
           <p class="control">
-            <a class="button is-primary is-large">
+            <a class="button is-warning is-large">
               Filter
             </a>
           </p>
@@ -44,7 +44,7 @@
       <div class ="card">
         <div class="card-image">
           <figure class="image is-4by3">
-            <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+            <img :src = "project.image" alt="Placeholder image">
           </figure>
         </div>
         <div class = "card-content">
@@ -62,8 +62,8 @@
             Categories: <a href = "#" v-for = "Category in project.categories"> {{Category}} </a>
             <hr>
             <p class="control has-text-centered">
-              <a class="button is-primary is-fullwidth">
-                  Voluntee
+              <a target = "_blank" :href = "project.link" style = "font-size: 1.5rem; font-weight: bold;" class="button is-warning is-fullwidth">
+                  Volunteer
               </a>
             </p>
           </div>
@@ -81,6 +81,8 @@
         projects: {
           demo1: {
             title: "Genetic Alliance South Africa",
+            image: "src/assets/example_1.jpeg",
+            link: "https://goo.gl/forms/MrN7FjS6pMQLO3yj1",
             description: "Help Genetic Alliance South Africa with 5 volunteers for 4-8 hours for Layout/design of bi-monthly e-newsletter in Mail Chimp",
             skills: {
               1: "IT",
@@ -93,6 +95,8 @@
           },
           demo2: {
             title: "DOCKDA Rural Development Agency",
+            image: "src/assets/example_2.jpeg",
+            link: "https://goo.gl/forms/MrN7FjS6pMQLO3yj1",
             description: "Help DOCKDA Rural Development Agency with 1 volunteer for 4-8 hours for Servicing of organisation vehicle",
             skills: {
               1: "Mechanical",
@@ -105,6 +109,8 @@
           },
           demo3: {
             title: "The Rays of Hope Children's Centre NGO",
+            image: "src/assets/example_3.jpeg",
+            link: "https://goo.gl/forms/MrN7FjS6pMQLO3yj1",
             description: "Help Rays of Hope with 5 volunteers for 1-4 hours for data consolidation using Microsoft Excell and Access",
             skills: {
               1: "Excel",
